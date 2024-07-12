@@ -1,0 +1,41 @@
+#certifications {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem; /* Added padding for better mobile view */
+}
+
+.certTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.cert {
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: hsl(47, 90%, 58%);
+    color: #000;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

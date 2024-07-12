@@ -1,0 +1,115 @@
+#achivements {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .achTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .achDesc {
+    font-size: 0.9rem;
+    font-weight: 400;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.achieve-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; /* Adds space between cards */
+    width: 100%;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+  
+  .ach {
+    width: 350px;
+    height:500px;
+    perspective: 1000px;
+    margin: 1rem auto;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  
+  .ach-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+  }
+  
+  .ach.flipped .ach-content {
+    transform: rotateY(180deg);
+  }
+
+  .ach-front:hover{
+    color: white;
+    padding-bottom: 0.5rem ;
+    border: 3px solid white;
+
+  }
+  .ach-back:hover{
+    padding-bottom: 0.5rem ;
+    border: 3px solid white;
+  }
+  
+  .ach-front,
+  .ach-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(47, 90%, 58%);
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(37, 188, 107, 0.1);
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .ach-back {
+    color: black;
+    border-radius: 8px; /* Added border radius to wrap content */
+    overflow: hidden;
+    background: hsl(47, 90%, 58%);
+    transform: rotateY(180deg);
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .achieve-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

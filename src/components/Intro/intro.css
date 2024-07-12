@@ -1,0 +1,121 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    top: 15rem;
+    right: 10rem;
+    z-index: 0;
+    object-fit: cover;
+    height: 400px;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.introContent{
+    height: 100vh;
+    width:100vh;
+    padding:2rem;
+    font-size:3rem;
+    font-weight:700;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.introName{
+    color: hsl(47, 90%, 58%);
+    animation: fadeIn 3s ease-in-out;
+}
+
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.btn{
+    background: white;
+    margin:1rem o;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem ;
+}
+
+.btn:hover{
+    color: hsl(47, 90%, 58%);
+} 
+
+.hire{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width:840px){
+    .bg{
+        right: -10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+
+
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .bg{
+        right: -20vw;
+        animation: fadeIn 4s ease-in-out;
+    }
+    .hello{
+        font-size: 1.75rem;
+        font-weight: bold;
+        
+        animation: fadeIn 2s ease-in-out;
+    }
+
+.introPara{
+    font-size: medium;
+    font-weight: bold;
+    
+    animation: fadeIn 4s ease-in-out;
+}
+.introName{
+    color: hsl(47, 90%, 58%);
+    font-weight: bold;
+    animation: fadeIn 3s ease-in-out;
+}
+   
+    
+
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
