@@ -49,7 +49,7 @@ const Skills = () => {
           {isEducationOpen && (
             <div className="sectionContent">
               <div className='degree'><b>Master's in Computer Science at Purdue University</b></div>
-              <span className='year'> 2023 - present </span>
+              <span className='year'> 2023 - Dec 2024 </span>
               <span className='gpa'> (GPA: 4.0/4.0) <br /></span>
               <div className='degree'><b>Bachelor's in Computer Science at Sathyabama University</b></div>
               <span className='year'> 2017 - 2021 </span>
